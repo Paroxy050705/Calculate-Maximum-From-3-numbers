@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow">
+    <h1>
+        <center>
+            <hr width="800" size="18" color="black">
+            Find the maximum number from the 3 numbers:--
+            <hr width="800" size="18" color="black">
+        </center>
+    </h1>
+    <script>
+        var a,b,c;
+        a=Number(prompt("Enter 1st number:"));
+        b=Number(prompt("Enter 2nd number:"));
+        c=Number(prompt("Enter 3rd number:"));
+        document.write("1st number is:"+a);
+        document.write("<br>2nd number is:"+b);
+        document.write("<br>3rd number is:"+c);
+        if(a>b && a>c){
+            document.write("<br>1st number is greater than 2nd & 3rd number");
+        }
+        else if(b>a && b>c){
+             document.write("<br>2nd number is greater than 1st & 3rd number");
+        }
+        else if(c>b && c>a){
+            document.write("<br>3rd number is greater than 1st & 2nd number");
+        }
+        else if(a==b && a!=c && b!=c){
+            document.write("<br>Here 1st & 2nd number are same");
+        }
+        else if(a==c && c!=b && a!=b){
+            document.write("<br>Here 1st & 3rd number are same");
+        } 
+        else if(b==c && a!=b && a!=c){
+            document.write("<br>Here 2nd & 3rd number are same");
+        }
+        else if(a===b && b===c && a===c){
+            document.write("<br>1st & 2nd & 3rd both are same");
+        }
+        
+    </script>
+</body>
+</html>
